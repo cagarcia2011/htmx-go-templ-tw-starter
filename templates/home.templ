@@ -1,0 +1,53 @@
+package templates
+
+templ Home(title string) {
+	@Layout() {
+		<main class="h-screen w-full flex justify-center items-center px-6">
+			<div class="relative">
+				<h1 class="text-4xl md:text-5xl text-center font-bold">{ title }</h1>
+				<h2 class="text-xl text-left font-semibold mt-2">Learn more:</h2>
+				<ul>
+					<li class="flex flex-row gap-3 items-baseline text-gray-300">
+						<svg style="fill:#e6e7eb;" height="16" viewBox="0 0 1792 1792" width="16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M553 1399l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23t-10 23l-393 393 393 393q10 10 10 23t-10 23zm591-1067l-373 1291q-4 13-15.5 19.5t-23.5 2.5l-62-17q-13-4-19.5-15.5t-2.5-24.5l373-1291q4-13 15.5-19.5t23.5-2.5l62 17q13 4 19.5 15.5t2.5 24.5zm657 651l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23t-10 23z"></path>
+						</svg>
+						<a class="no-underline text-blue-400 hover:underline hover:scale-[102%] transition-all ease-in-out text-2xl md:text-xl lg:text-lg" href="https://htmx.org/" target="_blank">HTMX</a>
+					</li>
+					<li class="flex flex-row gap-3 items-baseline text-gray-300">
+						<svg style="fill:#e6e7eb;" height="16" viewBox="0 0 1792 1792" width="16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M553 1399l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23t-10 23l-393 393 393 393q10 10 10 23t-10 23zm591-1067l-373 1291q-4 13-15.5 19.5t-23.5 2.5l-62-17q-13-4-19.5-15.5t-2.5-24.5l373-1291q4-13 15.5-19.5t23.5-2.5l62 17q13 4 19.5 15.5t2.5 24.5zm657 651l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23t-10 23z"></path>
+						</svg>
+						<a class="no-underline text-blue-400 hover:underline hover:scale-[102%] transition-all ease-in-out text-2xl md:text-xl lg:text-lg" href="https://templ.guide/" target="_blank">a-h.Templ</a>
+					</li>
+					<li class="flex flex-row gap-3 items-baseline text-gray-300">
+						<svg style="fill:#e6e7eb;" height="16" viewBox="0 0 1792 1792" width="16" xmlns="http://www.w3.org/2000/svg">
+							<path d="M553 1399l-50 50q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l466-466q10-10 23-10t23 10l50 50q10 10 10 23t-10 23l-393 393 393 393q10 10 10 23t-10 23zm591-1067l-373 1291q-4 13-15.5 19.5t-23.5 2.5l-62-17q-13-4-19.5-15.5t-2.5-24.5l373-1291q4-13 15.5-19.5t23.5-2.5l62 17q13 4 19.5 15.5t2.5 24.5zm657 651l-466 466q-10 10-23 10t-23-10l-50-50q-10-10-10-23t10-23l393-393-393-393q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l466 466q10 10 10 23t-10 23z"></path>
+						</svg>
+						<a class="no-underline text-blue-400 hover:underline hover:scale-[102%] transition-all ease-in-out text-2xl md:text-xl lg:text-lg" href="https://tailwindcss.com/" target="_blank">Tailwindcss</a>
+					</li>
+				</ul>
+				<div class="absolute flex justify-center items-center mt-4 w-full left-0">
+					<div id="parent" class="relative inline-flex  group">
+						<div
+							class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-blue-500 via-blue-300 to-blue-50 rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"
+						></div>
+						<button
+							title="Click me"
+							class="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+							role="button"
+							hx-get="/test"
+							hx-target="#parent"
+							hx-trigger="click"
+							hx-swap="outerHTML"
+						>
+							Test HTMX
+						</button>
+					</div>
+				</div>
+				<a class="fixed right-6 bottom-6 hover:scale-[105%] transition-all ease-in-out text-lg" href="https://github.com/cagarcia2011/htmx-go-templ-tw-starter" target="_blank">
+					<svg style="fill:#e6e7eb" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+				</a>
+			</div>
+		</main>
+	}
+}
