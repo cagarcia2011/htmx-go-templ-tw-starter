@@ -1,4 +1,4 @@
-# HTMX, GO Starter
+# HTMX, GO & Tailwind Starter
 
 This minimal starter prepares an HTMX, GO, A-H.Templ, Echo and Tailwindcss project.
 
@@ -12,7 +12,7 @@ Make sure you have the following already installed:
 -   [Tailwindcss](https://tailwindcss.com/docs/installation):
 
     -   For this starter I used the [standalone CLI build](https://tailwindcss.com/blog/standalone-cli) to use without Node.
-    -   I added the build to my path and renamed the file to `twcss`. If you decide to name the file differently make sure to change the `Makefile` with the right name:'
+    -   I added the build to my path and renamed the file to `twcss`. If you decide to name the file differently make sure to change the `Makefile` with the right name:
 
         ```bash
         css:
